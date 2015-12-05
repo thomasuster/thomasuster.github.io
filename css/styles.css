@@ -1,0 +1,188 @@
+/* Thomas Uster */
+
+/* init {*/
+body,h1,h2,h3,h4,p,img,ul {margin:0px;padding:0px;}
+a img {border:0px; display:inline;}
+/* init }*/
+
+/* color {*/
+body { background-color:#FoFFFF; color:#000000;}
+a { 
+color:#000000;
+border-bottom: 1px dotted #ac9b8f;
+}
+a:hover {
+color: #000000;
+/*background-color: #285e4e;*/
+border-bottom: 1px solid #ac9b8f; 
+}
+h2 { color: #000000; }
+.stack {color:#000000;}
+.date {color:#000000;}
+div.projects div.project span.caption {background-color:#000000;border:1px solid #b1b1b1; }
+div.projects div.dataStructures img{background-color:#FFFFFF}
+
+/* layout {*/
+
+@font-face {
+    font-family: MyriadPro;
+    src: url('../fonts/myriad-pro/MYRIADPRO-COND.OTF');
+}
+
+body {
+    font-family: MyriadPro;
+}
+
+/* Header {*/
+#header {
+    display:block;
+    width:300px;
+    height:100px;
+    /*margin:0.621em auto 3.22em auto;*/
+    margin:0px auto; width:970px; clear:both;/*border:1px solid red;*/ padding-bottom:1px;
+    padding-top:0px;
+    text-align:left;
+    font-size:12x; text-align:left;
+    font-weight:normal;
+}
+h1#title  {
+    margin:0.621em auto 0.621em auto;
+}
+
+/* Navigation {*/
+div#header div.navigation {width:auto; /*border:1px solid red;*/ text-align:center; /*margin-left:-30px;*/}
+div#header div.navigation a{font-size:22px;}
+div#header div.navigation a:hover {}
+div#header div.navigation img{vertical-align:middle; margin:0px 20px 0px 20px;}
+/* Navigation }*/
+
+/* Header }*/
+
+#content {
+margin:0px auto; width:970px; clear:both;/*border:1px solid red;*/ padding-bottom:1px; 
+}
+
+	/* Needed Footer Styles {*/
+	html, body {height: 100%;}
+	div#container {
+		position: relative; min-height: 100%; width:auto;
+		}
+	div#footer {}
+	#links {margin-top:2.5921em;}
+	/* Needed Footer Styles }*/
+
+/* layout }*/
+
+/* Text {*/
+	#helloWorld {text-align:center; margin:3.22em 0em 3.22em 0em;}
+	/* Header Size and Spacing {*/
+	h1,h2,h3,h4 {font-weight:bold;}
+	h1 {font-size: 36px; margin:0px 0px 0px 0px;}
+	h2 {font-size: 28px; margin:0px 0px 0px 0px;}
+	h3 {font-size: 18px; margin:0px 0px 0px 0px;}
+	/* Header Size and Spacing }*/
+	
+	p{margin:5px 0px 5px 0px; font-size:16px;}
+	ul{margin:5px 0px 5px 38px;}
+	a {font-weight:bold; text-decoration: none; 
+	padding: 0 1px;}
+	a:hover {
+	text-decoration: none;
+	}
+	.date{font-style:italic;margin-bottom: 20px;}
+    .title{font-style:italic;margin-bottom: 20px;}
+    .date+.title{font-style:italic;margin-bottom: 0px;}
+/* Text }*/
+
+/* divider {*/
+	div#divider {height:100px; width:100%; text-align:center; margin-top:39px; vertical-align:middle;}
+	div#divider p {display:inline;}
+	/* Navigation {*/
+		div#divider span.navigation {margin-left:20px;}
+		div#divider span.navigation a{}
+		div#divider span.navigation a:hover {}
+		div#divider span.navigation img{vertical-align:middle; margin:0px 0px 0px 0px; display:none;}
+	/* Navigation }*/
+/* divider }*/
+
+/* Projects {*/
+
+	div.projects div.project  {
+	display:block; margin-bottom:40px; 
+	min-height:280px; clear:both;margin-bottom:26px;
+	}
+	div.projects div.project span{
+	background-color:#0f1517;
+	display:block; 
+	float:left; clear:none; position:relative;
+	width:458px;
+	height:252px;
+	padding:6px;
+	vertical-align:middle;
+	}
+	
+	div.projects div.project span img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}
+	
+	div.projects div.project span a {
+	margin:0px;
+	padding:0px;
+	}
+	
+	div.projects div.project span.caption {
+	margin:0px; padding:2px; position:absolute; bottom:3px; left:3px; display:block;
+	float:none; clear:none; width:458px; height:auto;}
+	div.projects div.info {
+	float:left; width:480px;  padding-left:20px;
+	}
+	
+	
+	/*div.projects div:nth-child(odd) span {float:right;}*/
+
+	.stack{margin:0px;margin-bottom:20px;}
+	/*.stack li{margin:0px; display:inline;}
+	.stack li:before{content: ", ";white-space:pre;}
+	.stack li:first-child::before{ content: "";}*/
+	
+	.stack {list-style-image:none; display:block; height:1em;}
+	.stack li
+	{
+		display:block;
+		float:left;
+		margin-left:0px;
+	}
+	.stack li::after
+	{
+		content:", ";
+		white-space:pre;
+	}
+	
+	.stack li:last-child::after{content:"";}
+	.stack + *{clear:left;}
+
+	div.projects div.mokulele {min-height:221px;}
+	div.projects div.mokulele  a img{height:219px;}
+	
+	div.projects div.dataStructures {height:222px;}
+	div.projects div.operatingSystems {height:305px;}
+
+	ul {display:block; list-style-image: url(../images/arrow.png); list-style-type: none;}
+	ul li {margin-left:20px;}
+
+/* Projects }*/
+
+/* Resume {*/
+	.resume p{font-weight:bold;}
+/* Resume }*/
+
+/* Artwork {*/
+	div.artwork {clear:both; height:204px; margin-bottom:25px;}
+	div.artwork div.info {width:750px; margin-left:220px;}
+	div.artwork a img {width:200px; float:left;}
+	div.artwork a img:hover {}
+/* Artwork }*/
+
+
